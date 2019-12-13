@@ -26,4 +26,4 @@ jobs:
     - name: Extract glualint.zip
       run: unzip glualint.zip
     - name: Initiate linting
-      run: ./glualint lua -lua/test
+      run: ./glualint lua --ignore lua/test
