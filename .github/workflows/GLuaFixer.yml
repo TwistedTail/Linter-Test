@@ -8,6 +8,7 @@ on:
     - '!lua/starfall/**'
     - '!lua/entities/gmod_wire_expression2/**'
     - '!lua/includes/modules/**'
+    - '!lua/test/**'
   pull_request:
     paths:
     - 'lua/**'
@@ -15,6 +16,7 @@ on:
     - '!lua/starfall/**'
     - '!lua/entities/gmod_wire_expression2/**'
     - '!lua/includes/modules/**'
+    - '!lua/test/**'
 
 jobs:
   build:
@@ -26,4 +28,4 @@ jobs:
     - name: Extract glualint.zip
       run: unzip glualint.zip
     - name: Initiate linting
-      run: ./glualint lua --ignore lua/test
+      run: ./glualint lua !lua/test
