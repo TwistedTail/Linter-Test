@@ -28,7 +28,7 @@ jobs:
     - name: Extract glualint.zip
       run: unzip glualint.zip
     - name: Removing blacklisted paths
-      run: rm -r lua/test
+      run: rm -r lua/test lua/starfall
     - name: Checking all files
       run: ls -l
     - name: Initiate linting
